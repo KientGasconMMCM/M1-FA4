@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Showcase - Oguri Cap Edition</title>
+    <title>Tailwind CSS Showcase - GitHub Hosted</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html { scroll-behavior: smooth; }
@@ -20,7 +20,7 @@
                 <a href="#colors" class="hover:text-blue-600 transition">Colors</a>
                 <a href="#typography" class="hover:text-blue-600 transition">Typography</a>
                 <a href="#buttons" class="hover:text-blue-600 transition">Buttons</a>
-                <a href="#images" class="hover:text-blue-600 transition">Images</a>
+                <a href="#cards" class="hover:text-blue-600 transition">Cards</a>
                 <a href="#flex" class="hover:text-blue-600 transition">Layout</a>
             </div>
         </div>
@@ -35,23 +35,23 @@
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                 <div class="space-y-2 text-center">
                     <div class="h-20 w-full bg-blue-500 rounded-xl shadow-inner border border-black/5"></div>
-                    <span class="text-xs font-mono font-bold tracking-tight">blue-500</span>
+                    <span class="text-xs font-mono font-bold">blue-500</span>
                 </div>
                 <div class="space-y-2 text-center">
                     <div class="h-20 w-full bg-emerald-500 rounded-xl shadow-inner border border-black/5"></div>
-                    <span class="text-xs font-mono font-bold tracking-tight">emerald-500</span>
+                    <span class="text-xs font-mono font-bold">emerald-500</span>
                 </div>
                 <div class="space-y-2 text-center">
                     <div class="h-20 w-full bg-violet-500 rounded-xl shadow-inner border border-black/5"></div>
-                    <span class="text-xs font-mono font-bold tracking-tight">violet-500</span>
+                    <span class="text-xs font-mono font-bold">violet-500</span>
                 </div>
                 <div class="space-y-2 text-center">
                     <div class="h-20 w-full bg-amber-500 rounded-xl shadow-inner border border-black/5"></div>
-                    <span class="text-xs font-mono font-bold tracking-tight">amber-500</span>
+                    <span class="text-xs font-mono font-bold">amber-500</span>
                 </div>
                 <div class="space-y-2 text-center">
                     <div class="h-20 w-full bg-rose-500 rounded-xl shadow-inner border border-black/5"></div>
-                    <span class="text-xs font-mono font-bold tracking-tight">rose-500</span>
+                    <span class="text-xs font-mono font-bold">rose-500</span>
                 </div>
             </div>
         </section>
@@ -62,13 +62,13 @@
             </h2>
             <div class="p-8 bg-white border border-slate-200 rounded-3xl space-y-6 shadow-sm">
                 <div>
-                    <p class="text-xs text-blue-600 uppercase tracking-widest font-black mb-1">Procrastinating Student!</p>
+                    <p class="text-xs text-blue-600 uppercase tracking-widest font-black mb-1">Tailwind Demo</p>
                     <h3 class="text-4xl md:text-5xl font-black italic tracking-tighter text-slate-900 leading-none">
-                        Kient Gascon
+                        Clean & Responsive.
                     </h3>
                 </div>
                 <p class="text-xl text-slate-600 leading-relaxed max-w-2xl">
-                    Tailwind makes it easy to control <span class="underline decoration-blue-500 decoration-4 underline-offset-4 font-semibold text-slate-800">line height</span>, font weight, and <span class="bg-yellow-200 px-2 rounded">text highlights</span> effortlessly.
+                    Utilizing <span class="underline decoration-blue-500 decoration-4 underline-offset-4 font-semibold text-slate-800">relative paths</span> for GitHub ensures your images load correctly on production.
                 </p>
             </div>
         </section>
@@ -84,7 +84,7 @@
                 <button class="px-8 py-3 bg-white border-2 border-slate-300 rounded-xl hover:border-slate-900 transition-colors font-semibold">
                     Secondary Outline
                 </button>
-                <button class="px-8 py-3 bg-slate-900 text-white rounded-xl flex items-center gap-2 group hover:pr-6 transition-all">
+                <button class="px-8 py-3 bg-slate-900 text-white rounded-xl flex items-center gap-2 group hover:pr-10 transition-all">
                     Icon Button
                     <span class="group-hover:translate-x-2 transition-transform">→</span>
                 </button>
@@ -96,54 +96,53 @@
 
         <section id="cards">
             <h2 class="text-3xl font-extrabold mb-6 flex items-center gap-2">
-                <span class="w-2 h-8 bg-rose-500 rounded-full"></span> Image Cards
+                <span class="w-2 h-8 bg-rose-500 rounded-full"></span> Oguri Cap Gallery
             </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500">
-                    <div class="relative overflow-hidden aspect-[4/3]">
-                        <img src="Image/oguricap1.png" 
+                    <div class="relative overflow-hidden aspect-[4/3] bg-slate-100">
+                        <img src="oguricap1.png" 
                              alt="Oguri Cap 1"
-                             class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110">
+                             class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
+                             onerror="this.parentElement.innerHTML='<div class=\'p-8 text-xs text-slate-400\'>Image not found in /Image/ folder</div>'">
                         <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black text-slate-800 uppercase tracking-widest">
-                            Collection 01
+                            Entry 01
                         </span>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 group-hover:text-blue-600 transition-colors tracking-tight">Oguri Cap the first</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-4">Standard card layout featuring an image zoom on hover.</p>
-                        <div class="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase">
-                            <span>View Details</span>
-                            <span class="h-px w-8 bg-slate-200"></span>
-                        </div>
+                        <h3 class="font-bold text-xl mb-2 group-hover:text-blue-600 transition-colors tracking-tight">Classic View</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">Zoom effect with rounded corners and shadow hover.</p>
                     </div>
                 </div>
 
                 <div class="relative group h-full min-h-[400px] rounded-3xl overflow-hidden shadow-lg bg-slate-200">
-                    <img src="Image/oguricap2.png" 
+                    <img src="oguricap2.png" 
                          alt="Oguri Cap 2"
-                         class="absolute inset-0 w-full h-full object-cover">
+                         class="absolute inset-0 w-full h-full object-cover"
+                         onerror="this.parentElement.style.background='#cbd5e1'">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                     <div class="absolute bottom-0 p-8 text-white">
-                        <h3 class="text-2xl font-black mb-2">Oguri Cap the second</h3>
+                        <h3 class="text-2xl font-black mb-2">Immersive Card</h3>
                         <p class="text-slate-200 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                            Immersive full-height card using absolute positioning and gradients.
+                            Using relative paths for GitHub Pages stability.
                         </p>
                     </div>
                 </div>
 
                 <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm hover:border-blue-200 transition-colors">
                     <div class="bg-slate-50 rounded-2xl aspect-square mb-6 flex items-center justify-center relative group overflow-hidden">
-                        <img src="Image/oguricap3.png" 
+                        <img src="oguricap3.png" 
                              alt="Oguri Cap 3"
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/400?text=Check+Image+Folder'">
                         <button class="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <span class="bg-white text-slate-900 px-4 py-2 rounded-lg font-bold text-sm shadow-xl">Full Preview</span>
+                            <span class="bg-white text-slate-900 px-4 py-2 rounded-lg font-bold text-sm shadow-xl">Expand</span>
                         </button>
                     </div>
                     <div class="px-2 pb-2 text-center">
-                        <h3 class="font-bold text-slate-800 text-lg">Oguri Cap by me</h3>
-                        <p class="text-xs text-slate-400 mt-1 font-medium">Updated Gallery View</p>
+                        <h3 class="font-bold text-slate-800 text-lg">Product Display</h3>
+                        <p class="text-xs text-slate-400 mt-1 font-medium italic">/Image/oguricap3.png</p>
                     </div>
                 </div>
             </div>
@@ -157,18 +156,18 @@
                 <div class="flex flex-col p-8 bg-white rounded-3xl border border-slate-200 shadow-sm">
                     <div class="w-14 h-14 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mb-6 text-2xl">⚡</div>
                     <h4 class="font-bold text-xl mb-3 tracking-tight">Flex Vertical</h4>
-                    <p class="text-slate-500 text-sm">Consistent vertical stacking.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Stacking items vertically with ease.</p>
                 </div>
                 <div class="flex flex-col justify-between p-8 bg-slate-900 text-white rounded-3xl">
                     <h4 class="font-bold text-xl mb-3">Sticky Bottoms</h4>
-                    <button class="mt-8 w-full py-3 bg-white text-slate-900 rounded-xl text-sm font-black">GET STARTED</button>
+                    <button class="mt-8 w-full py-3 bg-white text-slate-900 rounded-xl text-sm font-black hover:bg-emerald-400 transition-colors">ACTION</button>
                 </div>
                 <div class="p-8 bg-white rounded-3xl border border-slate-200">
                     <h4 class="font-bold text-xl mb-4">Utility List</h4>
                     <ul class="space-y-2 text-sm text-slate-600">
-                        <li>✔ Responsive Grid</li>
-                        <li>✔ Hover States</li>
-                        <li>✔ Dark Mode Ready</li>
+                        <li>✔ Case-Sensitive Paths</li>
+                        <li>✔ Responsive Grids</li>
+                        <li>✔ Group Hover Effects</li>
                     </ul>
                 </div>
             </div>
@@ -177,7 +176,7 @@
     </main>
 
     <footer class="bg-white border-t border-slate-200 py-12 text-center text-slate-400 text-sm font-medium">
-        Built with Tailwind CSS
+        Hosted on GitHub • Built with Tailwind CSS
     </footer>
 
 </body>
